@@ -1,0 +1,112 @@
+.text-above {
+  font: var(--body-sm-r);
+  color: var(--text-body);
+  padding-bottom: 1rem;
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 0.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.color {
+  width: 1.75rem;
+  height: 1.75rem;
+  outline: 0.25rem solid var(--shape-button);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+
+  &:hover {
+    outline: 0.25rem solid var(--shape-hover);
+  }
+  
+}
+
+.color-ex {
+  width: 2.45rem;
+  height: 2.45rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  &:has(:checked){
+    border: 0.25rem solid var(--brand-light);
+    
+  }
+}
+
+.radio {
+  all: unset;
+  position: absolute;
+  inset: 0; 
+  
+    
+}
+
+.color-ex{
+  display:flex;
+
+}
+
+.teams-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.teams-inner {
+  width: 8.375rem;
+  height: 6.4375rem;
+  position: relative;
+  border: 1px solid var(--input-stroke);
+  background-color: var(--shape-button);
+  border-radius: 0.5rem;
+  padding-top: 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  justify-content: center;
+
+  &:hover, :focus-within{
+    background-color: var(--shape-hover);
+  }
+
+  &:has(:checked) {
+    border: 0.125rem solid var(--brand-light);
+  }
+
+}
+
+.radio-team {
+  all: unset;
+  position: absolute;
+  inset: 0; 
+  opacity: 0;  
+  
+}
+
+.img-team {
+   
+  width: 7.875rem;
+  height: 4rem;
+  border-radius: 0.25rem;
+   
+}
+
+.label-team {
+  font: var(--body-sm-r);
+  color: var(--text-body);
+   
+}
+

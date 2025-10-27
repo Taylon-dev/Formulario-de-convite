@@ -13,16 +13,16 @@
 
   --logo: 400 2.5rem/auto var(--leckerli-one);
 
-  --heading-md: 700 1.75rem/auto var(--baloo-2);
-  --heading-sm: 700 1.125rem/auto var(--baloo-2);
+  --heading-md: 700 1.75rem/1.6 var(--baloo-2);
+  --heading-sm: 700 1.125rem/1.6 var(--baloo-2);
   
-  --body-md-r: 400 1rem/auto var(--open-sans);
-  --body-sm-r: 400 0.875rem/auto var(--open-sans);
-  --body-xs-r: 400 0.75rem/auto var(--open-sans);
+  --body-md-r: 400 1rem/1.6 var(--open-sans);
+  --body-sm-r: 400 0.875rem/1.6 var(--open-sans);
+  --body-xs-r: 400 0.75rem/1.6 var(--open-sans);
 
-  --body-md-s: 600 1rem/auto var(--open-sans);
-  --body-sm-s: 600 0.875rem/auto var(--open-sans);
-  --body-xs-s: 600 0.75rem/auto var(--open-sans);
+  --body-md-s: 600 1rem/1.6 var(--open-sans);
+  --body-sm-s: 600 0.875rem/1.6 var(--open-sans);
+  --body-xs-s: 600 0.75rem/1.6 var(--open-sans);
 
   /*Color*/
   --brand-light: #59B2FF;

@@ -27,7 +27,218 @@
       </div>
     </aside>
     <main>
-      <div class="main-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora dolor illo, natus molestiae officiis quidem est molestias. Temporibus, odio alias. Cum exercitationem alias molestias magni nesciunt, fugit enim fuga!</div>
+      <div class="main-container">
+        <h1 class="title-master">Crie seu convite</h1>
+        <form>
+          <fieldset>
+            <legend>
+              <img src="assets/icons/calendar.svg" alt="imagem de calendário">
+              Sobre o evento
+            </legend>
+
+            <div id="title" class="form-field">
+              <label for="name" class="label">Título</label>
+              <input type="text" name="name" id="name">
+            </div>
+
+            <div id="start-end">
+              <div id="start" class="form-field">
+                <label for="start" class="label">Início</label>
+                <input type="text" name="start" id="start" placeholder="DD/MM/AAAA, --:--">
+              </div>
+              <div id="end" class="form-field">
+                <label for="end" class="label">Fim</label>
+                <input type="text" name="end" id="end" placeholder="DD/MM/AAAA, --:--">
+              </div>
+            </div>
+
+            <div id="type-address">
+              <div id="type" class="form-field">
+                <label for="type" class="label">Tipo</label>
+                <input type="text" name="type" id="type">
+              </div>
+              <div id="address" class="form-field">
+                <label for="address" class="label">Local</label>
+                <input type="text" name="address" id="address">
+              </div>
+            </div>
+
+            <div id="description" class="form-field">
+              <label for="description" class="label">Descrição</label>
+              <textarea name="description" id="description" cols="30" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div>
+
+          </fieldset>
+
+          <div class="personalization">
+            <legend>
+                  <img src="assets/icons/paintbrush-vertical.svg" alt="imagem de calendário">
+                  Personalização
+            </legend>
+            <p class="text-above">Cor principal</p>
+            <div class="colors">
+              
+                <div class="color-ex">
+                  <div class="color">
+                    <input type="radio" class="radio" name="color" id="cl-1" value="azul">
+                    <img src="assets/icons/circle-1.svg" alt="círculo azul">          
+                  </div>
+                </div>
+
+                <div class="color-ex">
+                  <div class="color">
+                    <input type="radio" class="radio" name="color" id="cl-2" value="azul escuro">
+                    <img src="assets/icons/circle-2.svg" alt="círculo azul escuro">          
+                  </div>
+                </div>
+
+                <div class="color-ex">
+                  <div class="color">
+                    <input type="radio" class="radio" name="color" id="cl-2" value="roxo">
+                    <img src="assets/icons/circle-3.svg" alt="círculo roxo">          
+                  </div>
+                </div>
+
+                <div class="color-ex">
+                  <div class="color">
+                    <input type="radio" class="radio" name="color" id="cl-2" value="rosa">
+                    <img src="assets/icons/circle-4.svg" alt="círculo rosa">          
+                  </div>
+                </div>
+
+                <div class="color-ex">
+                  <div class="color">
+                    <input type="radio" class="radio" name="color" id="cl-2" value="rosa pink">
+                    <img src="assets/icons/circle-5.svg" alt="círculo rosa pink">          
+                  </div>
+                </div>
+
+                <div class="color-ex">
+                  <div class="color">
+                    <input type="radio" class="radio" name="color" id="cl-2" value="vermelho">
+                    <img src="assets/icons/circle-6.svg" alt="círculo vermelho">          
+                  </div>
+                </div>
+
+                <div class="color-ex">
+                  <div class="color">
+                    <input type="radio" class="radio" name="color" id="cl-2" value="laranja">
+                    <img src="assets/icons/circle-7.svg" alt="círculo laranja">          
+                  </div>
+                </div>
+
+                <div class="color-ex">
+                  <div class="color">
+                    <input type="radio" class="radio" name="color" id="cl-2" value="amarelo">
+                    <img src="assets/icons/circle-8.svg" alt="círculo amarelo">          
+                  </div>
+                </div>
+
+                <div class="color-ex">
+                  <div class="color">
+                    <input type="radio" class="radio" name="color" id="cl-2" value="limão">
+                    <img src="assets/icons/circle-9.svg" alt="círculo limão">          
+                  </div>
+                </div>
+
+                <div class="color-ex">
+                  <div class="color">
+                    <input type="radio" class="radio" name="color" id="cl-2" value="verde">
+                    <img src="assets/icons/circle-10.svg" alt="círculo verde">          
+                  </div>
+                </div>
+
+                <div class="color-ex">
+                  <div class="color">
+                    <input type="radio" class="radio" name="color" id="cl-2" value="ciano">
+                    <img src="assets/icons/circle-11.svg" alt="círculo ciano">          
+                  </div>
+                </div>
+              
+              
+            </div>
+
+            <p class="text-above">Tema do evento</p>
+            <div class="teams-wrapper">
+
+              <div class="teams-inner">
+                <input type="radio" name="team" id="team1" class="radio-team">
+                <img class="img-team" src="assets/Image1.jpg" alt="">
+                <p class="label-team">Aniversário</p>
+              </div>
+              
+              <div class="teams-inner">
+                <input type="radio" name="team" id="team2" class="radio-team">
+                <img class="img-team" src="assets/Image2.jpg" alt="">
+                <p class="label-team">Infantil</p>
+              </div>
+
+              <div class="teams-inner">
+                <input type="radio" name="team" id="team3" class="radio-team">
+                <img class="img-team" src="assets/Image3.jpg" alt="">
+                <p class="label-team">Formatura</p>
+              </div>
+
+              <div class="teams-inner">
+                <input type="radio" name="team" id="team4" class="radio-team">
+                <img class="img-team" src="assets/Image4.jpg" alt="">
+                <p class="label-team">Casamento</p>
+              </div>
+
+              <div class="teams-inner">
+                <input type="radio" name="team" id="team5" class="radio-team">
+                <img class="img-team" src="assets/Image5.jpg" alt="">
+                <p class="label-team">Chá de bebê</p>
+              </div>
+
+              <div class="teams-inner">
+                <input type="radio" name="team" id="team6" class="radio-team">
+                <img class="img-team" src="assets/Image6.jpg" alt="">
+                <p class="label-team">Chá de panela</p>
+              </div>
+
+              <div class="teams-inner">
+                <input type="radio" name="team" id="team7" class="radio-team">
+                <img class="img-team" src="assets/Image7.jpg" alt="">
+                <p class="label-team">Carnaval</p>
+              </div>
+
+              <div class="teams-inner">
+                <input type="radio" name="team" id="team8" class="radio-team">
+                <img class="img-team" src="assets/Image8.jpg" alt="">
+                <p class="label-team">Páscoa</p>
+              </div>
+
+              <div class="teams-inner">
+                <input type="radio" name="team" id="team9" class="radio-team">
+                <img class="img-team" src="assets/Image9.jpg" alt="">
+                <p class="label-team">São João</p>
+              </div>
+
+              <div class="teams-inner">
+                <input type="radio" name="team" id="team10" class="radio-team">
+                <img class="img-team" src="assets/Image10.jpg" alt="">
+                <p class="label-team">Halloween</p>
+              </div>
+
+              <div class="teams-inner">
+                <input type="radio" name="team" id="team11" class="radio-team">
+                <img class="img-team" src="assets/Image11.jpg" alt="">
+                <p class="label-team">Natal</p>
+              </div>
+
+              <div class="teams-inner">
+                <input type="radio" name="team" id="team12" class="radio-team">
+                <img class="img-team" src="assets/Image12.jpg" alt="">
+                <p class="label-team">Outro</p>
+              </div>
+
+
+            </div>
+          </div>
+        </form>
+      </div>
+      
     </main>
   </div>
   
