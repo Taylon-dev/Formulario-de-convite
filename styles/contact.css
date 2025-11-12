@@ -1,0 +1,102 @@
+.name {
+
+  margin-bottom: 1rem;
+  width: 35rem;
+
+  & input {
+    all:unset;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+    width: 35rem;
+    height: 3rem;
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+    padding-inline: 1rem;
+    background-color: var(--input-base);    
+    font: var(--body-md-r);
+    color: var(--input-placeholder);
+  }
+
+  &:has(input[type="text"]:focus-within,:hover) input{
+    color: var(--text-heading);
+    border: 1px solid var(--brand-light);
+  }
+
+  &:has(input[type="text"]:invalid) .name-error{
+    visibility:visible;
+    
+  }
+
+  &:has(input[type="text"]:invalid) input{
+    border: 1px solid var(--danger);
+    
+  }
+
+  &:has(input[type="text"]:valid) input{
+    color: var(--text-heading);
+    
+  }
+
+
+}
+
+.name-error {
+  visibility: hidden;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+
+  & span{
+  font: var(--body-xs-r);
+  color: var(--danger);
+  }
+
+}
+
+.email-phone {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  width: 35rem;
+  margin-bottom: 3rem; 
+
+ 
+
+  & input {
+    all:unset;
+    box-sizing: border-box;
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+    width: 17rem;
+    background-color: var(--input-base);
+    padding: 0.8125rem 1rem;
+    font: var(--body-md-r);
+    color: var(--input-placeholder);
+    
+  }
+}
+
+.email {
+  &:has(input[type="text"]:hover,:focus) .email-input{
+    border: 1px solid var(--brand-light);
+    color: var(--text-heading);
+
+   }
+
+  &:has(input[type="text"]:valid) .email-input{
+    color: var(--text-heading);
+
+   }
+}
+
+.phone {
+   &:has(input[type="text"]:hover,:focus) .phone-input{
+    border: 1px solid var(--brand-light);
+    color: var(--text-heading);
+  }
+
+  &:has(input[type="text"]:valid) .phone-input{
+    color: var(--text-heading);
+  }
+}
+

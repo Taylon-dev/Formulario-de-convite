@@ -29,7 +29,7 @@
     <main>
       <div class="main-container">
         <h1 class="title-master">Crie seu convite</h1>
-        <form>
+        <form method="POST" enctype="multipart/form-data">
           <fieldset>
             <legend>
               <img src="assets/icons/calendar.svg" alt="imagem de calendário">
@@ -38,34 +38,44 @@
 
             <div id="title" class="form-field">
               <label for="name" class="label">Título</label>
-              <input type="text" name="name" id="name">
+              <input type="text" name="name" id="name-title" placeholder="Nome do evento" required>
             </div>
 
             <div id="start-end">
               <div id="start" class="form-field">
                 <label for="start" class="label">Início</label>
-                <input type="text" name="start" id="start" placeholder="DD/MM/AAAA, --:--">
+                <input type="text" name="start" id="start" placeholder="DD/MM/AAAA, --:--" required>
               </div>
               <div id="end" class="form-field">
                 <label for="end" class="label">Fim</label>
-                <input type="text" name="end" id="end" placeholder="DD/MM/AAAA, --:--">
+                <input type="text" name="end" id="end" placeholder="DD/MM/AAAA, --:--" required>
               </div>
             </div>
 
             <div id="type-address">
               <div id="type" class="form-field">
                 <label for="type" class="label">Tipo</label>
-                <input type="text" name="type" id="type">
+                <div class="wrapper-button-type">                  
+                  <div class="wrapper-button-type-presential">
+                    <div class="wrapper-button-type-presential-IMG"></div>
+                    <span>Presencial</span>
+                  </div>                  
+                  <div class="wrapper-button-type-online">
+                    <div class="wrapper-button-type-online-IMG"></div>
+                    <span>Online</span>
+                  </div>
+                  <input type="checkbox" name="type" id="type-check">
+                </div>
               </div>
               <div id="address" class="form-field">
                 <label for="address" class="label">Local</label>
-                <input type="text" name="address" id="address">
+                <input type="text" name="address" id="address" required placeholder="Link ou endereço">
               </div>
             </div>
 
             <div id="description" class="form-field">
-              <label for="description" class="label">Descrição</label>
-              <textarea name="description" id="description" cols="30" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              <label for="description-textarea" class="label">Descrição</label>
+              <textarea name="description" id="description-textarea" cols="30" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
             </div>
 
           </fieldset>
@@ -234,6 +244,99 @@
               </div>
 
 
+            </div>
+
+            <div class="style-and-cover">
+              <div class="style">
+                <span class="text-style-and-cover">Estilo</span>
+                <div class="dark">
+                  <div class="dark-wrapper-button">
+                    <input class="dark-light" type="checkbox" name="light" id="light">
+                    <div class="dark-circle-button"></div>
+                  </div>
+                  <span class="text-style-and-cover-inside" id="Escuro">Escuro</span>
+                  <span class="text-style-and-cover-inside" id="Claro">Claro</span>
+                </div>
+              </div>
+              <div class="cover">
+                <span class="text-style-and-cover">Foto de capa</span>
+                <div class="selection">
+                  <div class="cover-wrapper-button">
+                    <input class="cover-file" type="file" name="file" id="file" required>
+                    <img src="assets/icons/upload1.svg" alt="ícone de upload">
+                    <span class="selection-cover">Selecionar</span>
+                  </div>                
+                </div>
+                <div class="error">
+                    <img src="assets/icons/icon-error.svg" alt="ícone de alerta">
+                    <span>Error message</span>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="contact">
+            <legend>
+                  <img src="assets/icons/contact.svg" alt="imagem de contato">
+                  Dados para contato
+            </legend>
+
+            <div class="name">
+              <p class="text-above">Nome</p>
+              <input type="text" id="name" placeholder="Nome completo" required>
+              <div class="name-error">
+                    <img src="assets/icons/icon-error.svg" alt="ícone de alerta">
+                    <span>Error message</span>
+              </div>
+            </div>
+
+            <div class="email-phone">
+              <div class="email">
+                <p class="text-above">Email</p>
+                <input class="email-input" type="text" name="email" id="email" placeholder="exemplo@email.com">
+              </div>
+              <div class="phone">
+                <p class="text-above">Telefone</p>
+                <input class="phone-input" type="text" name="telefone" id="telefone" placeholder="(99) 99999-9999 ">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="terms">
+            <div class="selection-terms">
+              <div class="selection-img">
+                <div class="img-select"></div>
+                <input type="checkbox" name="terms" value="concordo com os termos" id="terms1">
+              </div>
+              <span>Li e concordo com os <a href="">Termos e Condições</a> e com a <a href="">Política de Privacidade</a></span>
+            </div>
+
+            <div class="selection-terms">
+              <div class="selection-img">
+                <div class="img-select"></div>
+                <input type="checkbox" name="terms" value="aceito atualizações e promoções por email" id="terms2">
+              </div>
+              <span>Aceito receber atualizações e promoções por e-mail</span>
+            </div>
+
+            <div class="selection-terms">
+              <div class="selection-img">
+                <div class="img-select"></div>
+                <input type="checkbox" name="terms" value="aceito atualizações e promoções por SMS" id="terms3">
+              </div>
+              <span>Aceito receber atualizações e promoções por SMS</a></span>
+            </div>
+
+          </div>
+
+          <div class="generate-button">
+            <div class="generate-button-inner">
+              <input class="generate-submit-input" type="submit" value="enviar">
+              <div class="generate-button-inner-img"></div>
+              <span class="generate-button-inner-text">Gerar convite</span>
             </div>
           </div>
         </form>

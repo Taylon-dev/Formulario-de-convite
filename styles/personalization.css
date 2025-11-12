@@ -1,3 +1,7 @@
+.personalization {
+  margin-bottom: 3rem;
+}
+
 .text-above {
   font: var(--body-sm-r);
   color: var(--text-body);
@@ -59,6 +63,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .teams-inner {
@@ -110,3 +115,178 @@
    
 }
 
+.style-and-cover {
+  display: flex;
+  gap: 1rem;
+}
+
+.selection-cover {
+  font: var(--body-sm-s);
+  color: var(--text-heading);
+}
+
+.selection-cover-inside {
+  font: var(--body-md-r);
+  color: var(--input-placeholder);
+}
+
+.style {
+  width: 11rem;
+  height: 4.9375rem;
+}
+
+.dark {
+  display: flex;
+  gap: 0.75rem;
+  align-items:center;
+  padding-block: 0.5rem;
+}
+
+.text-style-and-cover {
+  font: var(--body-sm-r);
+  color: var(--text-body);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.text-style-and-cover-inside {
+  font: var(--body-sm-r);
+  color: var(--text-heading);
+}
+
+.dark-wrapper-button{
+  width: 4rem;
+  height: 2rem;
+  border: 1px solid var(--input-stroke);
+  border-radius: 62.4375rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+
+  &:has(:checked){
+    background-color: var(--brand-light);
+
+    & .dark-circle-button{
+      background-color: var(--text-heading);
+      transition: 1s;
+      transform: translateX(125%);
+
+    }
+
+    & + #Escuro {
+      display:none;
+    }
+
+    & ~ #Claro {
+      display:inline;
+    }
+
+    
+  }
+
+
+}
+
+.dark-light {
+  all: unset;
+  opacity: 0;
+  position: absolute;
+  inset:0;
+}
+
+.dark-circle-button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--input-stroke);
+}
+
+.cover {
+  width: 23rem;
+  height: 4.9375rem;
+
+  &:has(input[type="file"]:invalid) .error{
+    visibility: visible;
+  }
+
+}
+
+.cover-wrapper-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background-color: var(--shape-button);
+  border-radius: 0.5rem;
+  width: 7.4375rem;
+  height: 2.5rem;
+  
+  
+
+  &:hover{
+    background-color: var(--shape-hover);
+  }
+}
+
+.selection{
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding-block: 0.25rem;
+  position:relative;
+
+  
+  
+
+  &:has(input[type="file"]:valid) {
+
+    & .cover-file {
+      color: var(--text-body);
+      font: var(--body-md-r);
+    }
+    
+  }
+}
+
+.error {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  & span{
+    font: var(--body-xs-r);
+    color: var(--danger);
+  }
+
+  
+}
+
+.cover-file {
+
+  all:unset;
+  position:absolute;
+  inset:0;
+  cursor: pointer;
+  padding-left: 8.1875rem;
+  top: 25%;
+  color: var(--input-placeholder);
+  font: var(--body-md-r);
+
+  
+  
+  
+
+  &::file-selector-button{
+  
+    display:none;
+    
+
+}
+
+}
+
+#Claro{
+  display: none;
+}

@@ -1,0 +1,53 @@
+.terms{
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid var(--input-stroke);
+
+  display: flex;
+  flex-direction: column;
+  gap:0.25rem;
+}
+
+.selection-terms {
+
+  display:flex;
+  gap: 0.75rem;
+  align-items: center;
+
+  & span {
+    font: var(--body-sm-r);
+    color: var(--text-body);
+
+    & a {
+      color: var(--brand-light);
+    }
+
+
+  }
+}
+
+.selection-img {
+  position:relative;
+
+  &:has(:checked) .img-select {
+    background-image: url(/assets/icons/checked.svg);
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  & input {
+    all: unset;
+    box-sizing: border-box;
+    position:absolute;
+    inset:0;
+    cursor: pointer;
+  }
+
+
+}
+
+.img-select {
+  background-image: url(/assets/icons/unchecked.svg);
+  width: 1.25rem;
+  height: 1.25rem;
+}
